@@ -86,13 +86,13 @@ def main():
             poly_list.append([float(i[1]), float(i[2])])  #Add the coordinates to the list
             p_list[0].append([float(i[1]), float(i[2])])
     try:
-        n = int(input("请输入点的数量："))
+        n = int(input("Enter the number of test points："))
         for i in range(n):
             x = float(input("x:"))
             y = float(input("y:"))
             input_list.append([x,y])  #Add the coordinates to the list
     except NameError:
-        print("请输入点的数量：")
+        print("Enter the number of test points：")
     print('categorize points')
     for i in input_list:
         c.append(isPoiWithinPoly(i,p_list))  #Classify
